@@ -18,6 +18,6 @@ Basta abrir `index.html` no navegador.
 - `docs/release-notes.md`
 
 ## Créditos
-- Aluno A (owner), Aluno B, Aluno C.
+- Aluno A - Luan Botelho, Aluno B - Davi Guimarães, Aluno C - José Roberto.
 
 teste
