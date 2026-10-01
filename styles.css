@@ -1,5 +1,9 @@
 :root {
+<<<<<<< HEAD
   --primary: #3bf664; /* azul padrão base */
+=======
+  --primary: #f63b3b; /* azul padrão base */
+>>>>>>> origin/tema-ajustavel
   --bg: #f8fafc;
   --text: #0f172a;
   --card: #ffffff;

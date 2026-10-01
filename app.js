@@ -5,7 +5,11 @@ const elDecrement = document.getElementById("btn-decrement");
 const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
+<<<<<<< HEAD
 function updateCount(newValue) {
+=======
+function setCount(newValue) {
+>>>>>>> origin/tema-ajustavel
   elCount.textContent = String(newValue);
 }
 
@@ -13,17 +17,30 @@ let state = { count: 0, dark: false };
 
 elIncrement.addEventListener("click", () => {
   state.count += 2;
+<<<<<<< HEAD
   updateCount(state.count);
 
 });
 
 elDecrement.addEventListener("click", () => {
-  state.count -= 1;
+  state.count -= 2;
   updateCount(state.count);
+=======
+  setCount(state.count);
+});
+
+elDecrement.addEventListener("click", () => {
+  state.count -= 2;
+  setCount(state.count);
+>>>>>>> origin/tema-ajustavel
 });
 
 elToggleTheme.addEventListener("click", () => {
   state.dark = !state.dark;
+<<<<<<< HEAD
+=======
+  document.documentElement.style.setProperty("--text", state.dark ? "#0b1255" : "#ff220" )
+>>>>>>> origin/tema-ajustavel
   document.documentElement.style.setProperty("--bg", state.dark ? "#0b1220" : "#f8fafc");
   document.documentElement.style.setProperty("--text", state.dark ? "#e2e8f0" : "#0f172a");
   elTitle.textContent = state.dark ? "Mini App – Modo Escuro" : "Mini App – GitFlow";
