@@ -17,7 +17,7 @@ elIncrement.addEventListener("click", () => {
 });
 
 elDecrement.addEventListener("click", () => {
-  state.count -= 1;
+  state.count -= 2;
   setCount(state.count);
 });
 
