@@ -5,7 +5,7 @@ const elDecrement = document.getElementById("btn-decrement");
 const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
-function setCount(newValue) {
+function updatecount(newValue) {
   elCount.textContent = String(newValue);
 }
 
@@ -24,7 +24,7 @@ elDecrement.addEventListener("click", () => {
 elToggleTheme.addEventListener("click", () => {
   state.dark = !state.dark;
   document.documentElement.style.setProperty("--bg", state.dark ? "#0b1220" : "#f8fafc");
-  document.documentElement.style.setProperty("--text", state.dark ? "#0f2c53" : "#0f172a");
-  elTitle.textContent = state.dark ? "Mini App – Modo Escuro" : "Mini App – GitFlow";
+  document.documentElement.style.setProperty("--text", state.dark ? "#e2e8f0" : "#0f172a");
+  elTitle.textContent = state.dark ? "Mini App – Modo Escuro" : "Mini App – EQUIPE B";
   elToggleTheme.setAttribute("aria-pressed", String(state.dark));
 });
